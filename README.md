@@ -30,7 +30,7 @@ $ ./script/bootstrap
 
 ```bash
 $ unzip asf-standalone-archive-3.45.0.85.zip
-$ cp xdk-asf-3.45.0 -rf  <path-to-ot-samr21>/third_party/microchip/asf
+$ cp xdk-asf-3.45.0 -rf <path-to-ot-samr21>/third_party/microchip/asf
 ```
 
 3. Build OpenThread Firmware (CLI example) on SAMR21 platform.
@@ -42,7 +42,7 @@ $ ./script/build
 
 ## Flash Binaries
 
-After a successful build, the `elf` files are found in `<path-to-ot-samr21>/openthread/examples/apps/`.
+After a successful build, the `elf` files are found in `<path-to-ot-samr21>/build/bin/`.
 
 Compiled binaries may be flashed onto the SAM R21 Xplained Pro using embedded debugger EDBG.
 
