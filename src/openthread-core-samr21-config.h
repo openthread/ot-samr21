@@ -75,11 +75,13 @@ extern uint32_t __d_nv_mem_end;
 #define OPENTHREAD_CONFIG_DEFAULT_TRANSMIT_POWER 5
 
 /**
- * @def OPENTHREAD_CONFIG_NCP_UART_ENABLE
+ * @def OPENTHREAD_CONFIG_NCP_HDLC_ENABLE
  *
- * Define to 1 to enable NCP UART support.
+ * Define to 1 to enable NCP HDLC support.
  *
  */
-#define OPENTHREAD_CONFIG_NCP_UART_ENABLE 1
+#ifndef OPENTHREAD_CONFIG_NCP_HDLC_ENABLE
+#define OPENTHREAD_CONFIG_NCP_HDLC_ENABLE 1
+#endif
 
 #endif // OPENTHREAD_CORE_SAMR21_CONFIG_H_
