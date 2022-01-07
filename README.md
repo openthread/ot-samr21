@@ -48,11 +48,11 @@ Compiled binaries may be flashed onto the SAM R21 Xplained Pro using embedded de
 
 ```
 Open a terminal
-  
+
 $ openocd -f board/atmel_samr21_xplained_pro.cfg
-  
-Leave the terminal open to monitor the status of the opencd server and open a new terminal. In this terminal 
-  
+
+Leave the terminal open to monitor the status of the opencd server and open a new terminal. In this terminal
+
 $ cd <path-to-ot-samr21>/build/bin
 $ arm-none-eabi-gdb ot-cli-ftd
 $ (gdb) target remote 127.0.0.1:3333
