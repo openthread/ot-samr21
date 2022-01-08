@@ -46,9 +46,15 @@ After a successful build, the `elf` files are found in `<path-to-ot-samr21>/buil
 
 Compiled binaries may be flashed onto the SAM R21 Xplained Pro using embedded debugger EDBG.
 
-```bash
+```
+Open a terminal:
+
 $ openocd -f board/atmel_samr21_xplained_pro.cfg
-$ cd <path-to-ot-samr21>/output/samr21/bin
+
+Leave the terminal open to monitor the status of the opencd server and open a new terminal.
+In this terminal:
+
+$ cd <path-to-ot-samr21>/build/bin
 $ arm-none-eabi-gdb ot-cli-ftd
 $ (gdb) target remote 127.0.0.1:3333
 $ (gdb) load
