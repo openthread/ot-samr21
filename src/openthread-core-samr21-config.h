@@ -84,4 +84,14 @@ extern uint32_t __d_nv_mem_end;
 #define OPENTHREAD_CONFIG_NCP_HDLC_ENABLE 1
 #endif
 
+/**
+ * @def OPENTHREAD_CONFIG_TCP_ENABLE
+ *
+ * Define as 1 to enable TCP.
+ *
+ */
+#ifndef OPENTHREAD_CONFIG_TCP_ENABLE
+#define OPENTHREAD_CONFIG_TCP_ENABLE 0
+#endif
+
 #endif // OPENTHREAD_CORE_SAMR21_CONFIG_H_
