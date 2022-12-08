@@ -123,7 +123,7 @@ int mbedtls_aes_crypt_cbc(mbedtls_aes_context *ctx,
                           size_t               length,
                           unsigned char        iv[16],
                           const unsigned char *input,
-                          unsigned char *      output);
+                          unsigned char       *output);
 
 /**
  * \brief               AES-CTR buffer encryption/decryption
@@ -149,11 +149,11 @@ int mbedtls_aes_crypt_cbc(mbedtls_aes_context *ctx,
  */
 int mbedtls_aes_crypt_ctr(mbedtls_aes_context *ctx,
                           size_t               length,
-                          size_t *             nc_off,
+                          size_t              *nc_off,
                           unsigned char        nonce_counter[16],
                           unsigned char        stream_block[16],
                           const unsigned char *input,
-                          unsigned char *      output);
+                          unsigned char       *output);
 
 #ifdef __cplusplus
 }
