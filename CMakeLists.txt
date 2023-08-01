@@ -39,8 +39,7 @@ add_subdirectory(openthread)
 
 target_compile_definitions(ot-config INTERFACE
     MBEDTLS_USER_CONFIG_FILE="samr21-mbedtls-config.h"
-    OPENTHREAD_CONFIG_FILE="openthread-core-samr21-config.h"
-    OPENTHREAD_PROJECT_CORE_CONFIG_FILE="openthread-core-samr21-config.h"
+    OPENTHREAD_PLATFORM_CORE_CONFIG_FILE="openthread-core-samr21-config.h"
     OPENTHREAD_CORE_CONFIG_PLATFORM_CHECK_FILE="openthread-core-samr21-config-check.h"
 )
 
